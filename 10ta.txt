@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int func(N, i){
+     if( N != i)
+            {
+            return func(N, i+1); }
+     else {
+        return i;
+     }
+}
+ 
+int main()
+{
+ 
+    //red na fibonacci
+    int arr[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711};
+    printf("%d", arr[func(18, 0)]);
+    return 0;
+}
